@@ -3,10 +3,14 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TitleComponent } from './components/title/title.component';
+import { ConfettiComponent } from './components/confetti/confetti.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TitleComponent,
+    ConfettiComponent
   ],
   imports: [
     BrowserModule,

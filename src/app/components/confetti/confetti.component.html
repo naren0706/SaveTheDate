@@ -1,0 +1,7 @@
+<div class="confetti-container" (click)="triggerConfetti()">
+  <div
+    class="confetti"
+    *ngFor="let particle of confettiParticles"
+    [ngStyle]="getParticleStyle(particle)"
+  ></div>
+</div>

@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-size: 62.5%;
+  //   background-color: grey;
+  @media only screen and (max-width: 1200px) {
+    /*Tablets [601px -> 1200px]*/
+    font-size: 50%;
+  }
+  @media only screen and (max-width: 600px) {
+    /*Big smartphones [426px -> 600px]*/
+    // background-color: blue;
+    font-size: 40%;
+  }
+  @media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+    // background-color: black;
+    font-size: 30%;
+  }
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,29 @@
+.title-container {
+  font-weight: 900;
+  font-size: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5rem;
+  &--sub {
+    width: 35%;
+    background-color: blue;
+    .text {
+      padding: 0 1rem;
+      line-height: 50px;
+      margin: 0 -5rem;
+      // width: 100%;
+      &:first-child {
+        text-align: left;
+      }
+      &:nth-child(2) {
+        text-align: center;
+      }
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
