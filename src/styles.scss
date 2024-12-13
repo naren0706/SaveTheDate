@@ -4,21 +4,27 @@ html {
   //   background-color: grey;
   @media only screen and (max-width: 1200px) {
     /*Tablets [601px -> 1200px]*/
-    font-size: 50%;
+    font-size: 55%;
   }
   @media only screen and (max-width: 600px) {
     /*Big smartphones [426px -> 600px]*/
     // background-color: blue;
-    font-size: 40%;
+    font-size: 50%;
   }
   @media only screen and (max-width: 425px) {
     /*Small smartphones [325px -> 425px]*/
     // background-color: black;
-    font-size: 30%;
+    font-size: 45%;
   }
 }
+@import url("https://fonts.cdnfonts.com/css/the-brittany-script");
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: "The Brittany Script", sans-serif;
+}
+:root {
+  --primary-color: blueviolet;
+  --secondary-color: yellow;
 }

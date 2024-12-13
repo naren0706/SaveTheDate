@@ -1,0 +1,40 @@
+.container {
+  //   &-before {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+
+  &-top {
+    height: 100%;
+    width: 100vw;
+    background-color: var(--primary-color);
+  }
+
+  &-middle {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 1s ease-in;
+    .content-center {
+      height: 15rem;
+      width: 15rem;
+      background-color: var(--secondary-color);
+      border-radius: 50%;
+      border: 3rem double var(--primary-color);
+      transition: all 2s ease-in;
+    }
+  }
+
+  &-bottom {
+    height: 100%;
+    width: 100vw;
+    // background-color: var(--primary-color);
+    background-color: pink;
+  }
+}

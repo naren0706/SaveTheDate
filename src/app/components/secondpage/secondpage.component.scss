@@ -1,0 +1,32 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.text {
+  display: inline-block;
+  height: 100vh;
+  background-color: pink;
+}
+.container-wrap {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  z-index: 1;
+  animation: increaseSize 2s ease 5s 1 forwards;
+}
+@keyframes increaseSize {
+  from {
+    transform: scale(0);
+    border: 1px double transparent;
+  }
+  to {
+    transform: scale(1000);
+    border: 1rem double var(--secondary-color);
+  }
+}

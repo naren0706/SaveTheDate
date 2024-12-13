@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { log } from 'console';
-
 interface ConfettiParticle {
   x: number;
   y: number;
@@ -25,6 +23,7 @@ export class ConfettiComponent implements OnInit {
 
   ngOnInit(): void {
     this.generateConfetti();
+    console.log('implemented');
   }
 
   triggerConfetti(): void {
