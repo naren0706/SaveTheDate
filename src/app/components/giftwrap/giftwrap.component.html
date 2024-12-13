@@ -1,0 +1,9 @@
+<div class="container" *ngIf="!viewInnerPage">
+  <div class="container-top"></div>
+  <div class="container-middle" [style.height]="middleContainerheight" [style.width]="middleContainerWidth" [style.background-color]="middleContainerbackgroundColor">
+    <div class="content-center" (click)="reduceWidth()" [style.border]="contentBorder">
+    </div>
+  </div>
+  <div class="container-bottom"></div>
+</div>
+<app-landing-page *ngIf="viewInnerPage"/>

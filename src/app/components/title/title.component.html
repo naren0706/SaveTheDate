@@ -1,7 +1,14 @@
-<div class="title-container">
+<div class="title-container" [style.font-size]="fontSizeContainer">
+  <div class="wrap-class"></div>
   <div class="title-container--sub">
-    <div class="text">Save</div>
-    <div class="text">The</div>
-    <div class="text">Date</div>
+    <div class="text-container" [style.line-height]="lineHeight">
+      <div class="text">{{text1}}</div>
+    </div>
+    <div class="text-container" [style.line-height]="lineHeight">
+      <div class="text">{{text2}}</div>
+    </div>
+    <div class="text-container" [style.line-height]="lineHeight">
+      <div class="text">{{text3}}</div>
+    </div>
   </div>
 </div>
