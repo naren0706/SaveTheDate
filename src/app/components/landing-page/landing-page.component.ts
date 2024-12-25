@@ -12,14 +12,16 @@ export class LandingPageComponent implements OnInit {
   showConfetti = true;
   ShowMainText = true;
   priyo: string = 'priyu`S';
-  hideText1 = false;
-  hideText2 = false;
+  showSecondContent: boolean = false;
   constructor(private router: Router) {}
   ngOnInit(): void {
     setTimeout(() => {
       this.showConfetti = false;
       console.log('cofette removed');
-      this.router.navigateByUrl('second-page');
+      // this.router.navigateByUrl('second-page');
+      setTimeout(() => {
+        this.showSecondContent = true;
+      }, 1000);
     }, 7000);
   }
 }
