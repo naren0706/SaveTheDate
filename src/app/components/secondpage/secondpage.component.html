@@ -1,5 +1,11 @@
-<div class="container">
+<div class="container" *ngIf="!showthirdContent">
     <div class="container-wrap">
     </div>
-    <app-title class="text" [text1]="'Fourth Love'" [text2]="'Aniversary with'" [text3]="'Wedding togethere'" [fontSizeContainer]="'5rem'" [lineHeight]="'9rem'"/>
+    <div class="text-container">
+        <app-title class="text" [text1]="'Fourth'" [text2]="'Love'" [text3]="' Aniversary'" [fontSizeContainer]="'8rem'" [lineHeight]="'9rem'"/>
+        <app-title class="text" [text1]="'With'" [text2]="'Wedding '" [text3]="'Togethere'" [fontSizeContainer]="'8rem'" [lineHeight]="'9rem'"/>
+    </div>
+</div>
+<div class="container" *ngIf="showthirdContent">
+    <app-thirdpage/>
 </div>

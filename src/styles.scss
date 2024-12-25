@@ -17,14 +17,24 @@ html {
     font-size: 45%;
   }
 }
-@import url("https://fonts.cdnfonts.com/css/the-brittany-script");
+// @import url("https://fonts.cdnfonts.com/css/the-brittany-script");
+@font-face {
+  font-family: 'narenpriyolovefont';
+  src: url('./assert/fonts/loveFont.ttf');
+}
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "The Brittany Script", sans-serif;
+  font-family: "narenpriyolovefont", sans-serif;
+  .container{
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    overflow: hidden !important;
+  }
 }
 :root {
-  --primary-color: blueviolet;
-  --secondary-color: yellow;
+  --primary-color: #ac5180;
+  --secondary-color: #ff9f00;
+  --light-yellow:#f5ff00;
 }

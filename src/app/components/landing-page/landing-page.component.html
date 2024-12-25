@@ -1,14 +1,11 @@
-<div class="container">
+<div class="container" *ngIf="!showSecondContent">
     <app-confetti class="confetti" *ngIf="showConfetti"/>
     <div class="text">
-      <app-title class="title" [text1]="'Save'" [text2]="'The'" [text3]="'Date'" [fontSizeContainer]="'6rem'" [lineHeight]="'4rem'"/>
-      <app-title class="title" [text1]="''" [text2]="'FOR'" [text3]="''" [fontSizeContainer]="'2rem'" [lineHeight]="'4rem'"/>
+      <app-title class="title" [text1]="'Save'" [text2]="'The'" [text3]="'Date'" [fontSizeContainer]="'8rem'" [lineHeight]="'5rem'"/>
+      <app-title class="title" [text1]="''" [text2]="'For'" [text3]="''" [fontSizeContainer]="'5rem'" [lineHeight]="'4rem'"/>
       <app-title class="title" [text1]="'Naren'" [text2]="'and'" [text3]="priyo" [fontSizeContainer]="'8rem'" [lineHeight]="'4rem'"/>
     </div>
-      <div class="text">
-        <app-title class="title" [text1]="'Save'" [text2]="'The'" [text3]="'Date'" [fontSizeContainer]="'6rem'" [lineHeight]="'4rem'"/>
-        <app-title class="title" [text1]="''" [text2]="'FOR'" [text3]="''" [fontSizeContainer]="'2rem'" [lineHeight]="'2rem'"/>
-        <app-title class="title" [text1]="'Naren'" [text2]="'and'" [text3]="priyo" [fontSizeContainer]="'8rem'" [lineHeight]="'4rem'"/>
-      </div>
   </div>
-  
+  <div class="container" *ngIf="showSecondContent">
+    <app-secondpage/>
+  </div>
