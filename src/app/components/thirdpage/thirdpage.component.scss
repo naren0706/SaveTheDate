@@ -1,6 +1,15 @@
-.container{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background-color: var(--secondary-color);
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--secondary-color);
+  font-size: 10rem;
+  text-align: center;
+  &-sub {
+  }
+}
+
+.iframe {
+  height: 70vh;
+  width: 100vw;
 }

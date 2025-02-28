@@ -1,11 +1,24 @@
 <div class="container" *ngIf="!showthirdContent">
-    <div class="container-wrap">
-    </div>
-    <div class="text-container">
-        <app-title class="text" [text1]="'Fourth'" [text2]="'Love'" [text3]="' Aniversary'" [fontSizeContainer]="'8rem'" [lineHeight]="'9rem'"/>
-        <app-title class="text" [text1]="'With'" [text2]="'Wedding '" [text3]="'Togethere'" [fontSizeContainer]="'8rem'" [lineHeight]="'9rem'"/>
-    </div>
+  <div class="container-wrap"></div>
+  <div class="text-container">
+    <app-title
+      class="text"
+      [text1]="'Third'"
+      [text2]="'Love'"
+      [text3]="' Aniversary'"
+      [fontSizeContainer]="'8rem'"
+      [lineHeight]="'9rem'"
+    />
+    <app-title
+      class="text"
+      [text1]="'With'"
+      [text2]="'Wedding '"
+      [text3]="'Togethere'"
+      [fontSizeContainer]="'8rem'"
+      [lineHeight]="'9rem'"
+    />
+  </div>
 </div>
-<div class="container" *ngIf="showthirdContent">
-    <app-thirdpage/>
+<div class="" *ngIf="showthirdContent">
+  <app-thirdpage />
 </div>

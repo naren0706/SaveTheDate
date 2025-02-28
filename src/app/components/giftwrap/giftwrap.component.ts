@@ -13,9 +13,11 @@ export class GiftwrapComponent {
   middleContainerbackgroundColor = 'var(--secondary-color)';
   middleContainerheight = '10vh';
   contentBorder = '3rem double var(--primary-color)';
+  clicktext: string = 'Click Me';
   reduceWidth() {
     this.middleContainerWidth = '15rem';
     this.middleContainerbackgroundColor = 'var(--primary-color)';
+    this.clicktext = '';
     setTimeout(() => {
       this.middleContainerheight = '0px';
     }, 1000);
